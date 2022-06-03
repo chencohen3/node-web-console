@@ -40,5 +40,4 @@ router.post('/rpc', c2k(RPCServer.middleware()))
 
 server.use(router.routes()).use(router.allowedMethods())
 
-server.listen(443)
 console.log('server started and listens on port 3000')
